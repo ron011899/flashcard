@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Onest:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'Manrope', sans-serif;
+}
+header{
+    background-color: white;
+
+}
+.container{
+    width: 90%;
+    margin: auto;
+    
+}
+.nav{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;    
+}
+.nav h1{
+    font-family: 'Onest', sans-serif;
+}
+.button-container{
+    display: flex;
+    gap: 10px;
+}
+button{
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.171);
+}
+.create-box{
+    width: 400px;
+    margin: auto;
+    border: 2px solid white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.create-box h2{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.create-box textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.create-box label{
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+.create-box .card-button{
+    display: flex;
+    justify-content: space-between;
+}
+.display-card-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    margin: auto;
+}
+.flashcard{
+    width: 350px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+
+}
+.flashcard h2{
+    font-size: 1rem;
+}
+@media(max-width: 414px){
+    .nav{
+      flex-direction: column;
+      align-items: center;
+    }
+    .button-container{
+        margin-top: 10px;
+    }
+    .create-box{
+        width: 300px;
+        
+    }
+    .create-box h2{
+        font-size: 1.5rem;
+    }
+}
